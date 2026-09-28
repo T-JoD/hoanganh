@@ -9,7 +9,15 @@
 </head>
     
 <body class="not-loaded">
-    <audio src="nhac.mp3" autoplay loop controls></audio>
+    <audio id="nhacNen" src="nhac.m4a" loop></audio>
+    <script>
+        document.body.addEventListener('click', function() {
+            var audio = document.getElementById('nhacNen');
+            if (audio.paused) {
+                audio.play();
+            }
+        }, { once: true });
+    </script>
     <div class="night"></div>
     <div class="happy-woman-day">𝓗𝓪𝓹𝓹𝔂 𝔀𝓸𝓶𝓮𝓷'𝓼 𝓭𝓪𝔂 2️⃣0️⃣/1️⃣0️⃣  Kim khánh Linh  </div>
     <div class="flowers">
